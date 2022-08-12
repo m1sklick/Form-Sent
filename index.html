@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form sent</title>
+</head>
+<body>
+    <div class="weapper">
+        <div class="form">
+            <form action="#" id="form" class="form_body">
+                <h1 class="form_title">Sent data to e-mail</h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label">Name*:</label>
+                    <input id="formName" type="text" name="name" class="form_input req">
+                </div>
+                <div class="form_item">
+                    <label for="formEmail" class="form_label">E-mail*:</label>
+                    <input id="formEmail" type="text" name="formEmail" class="form_input req email">
+                </div>
+                <div class="form_item">
+                    <label for="formMessage" class="form_message">Message:</label>
+                    <textarea id="formMessage" name="message" class="form_input"></textarea>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Attach an image</div>
+                    <div class="file">
+                        <div class="file_item">
+                            <input id="formFile" accept=".pdf" type="file" name="image" class="file_input">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="form_button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

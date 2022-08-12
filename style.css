@@ -1,0 +1,76 @@
+body {
+    background-color: gray;
+}
+.form {
+    max-width: 550px;
+    margin: 0px auto;
+    color: white;
+    padding: 30px 0;
+}
+.form_body {
+    position: relative;
+}
+.form_body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./loading.gif) center / 100px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+}
+.form_body.sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+.form_title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.form_item {
+    margin-bottom: 20px;
+}
+.form_label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+.form_input {
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(52, 174, 135);
+    width: 100%;
+    font-size: 18px;
+}
+.form_input.error {
+    border: 2px solid rgb(174, 74, 52);
+}
+.form_input:focus {
+    outline: none;
+}
+textarea.form_input {
+    min-height: 120px;
+    resize: none;
+}
+.form_button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: rgb(52, 174, 135);
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.form_button:hover {
+    background-color: rgb(42, 135, 105); 
+}
